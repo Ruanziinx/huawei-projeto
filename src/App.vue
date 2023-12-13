@@ -1,11 +1,11 @@
 <script setup>
-import { RouterView, RouterLink } from "vue-router";
+import FormLogin from "./components/FormLogin/FormLogin.vue"
 
 </script>
 
 <template>
-  <div>    
-    <RouterView />
+  <div>
+    <FormLogin class="center-component"/>
   </div>
 </template>
 

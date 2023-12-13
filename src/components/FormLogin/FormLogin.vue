@@ -1,4 +1,4 @@
-<script setup>
+,<script setup>
 </script>
 
 <template>
@@ -102,6 +102,7 @@ form input {
 
 .links {
   margin-top: 10px;
+
 }
 
 input[type="number"]::-webkit-inner-spin-button,
