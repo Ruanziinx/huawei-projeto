@@ -13,9 +13,8 @@
                     <h2>Entrar no Huawei</h2>
                 </div>
                 <input 
-                    type="email" 
-                    id="exampleFormControlInput1" 
-                    placeholder="Número de matrícula"
+                    type="password" 
+                    placeholder="Crie uma senha"
                 >
             </div>
     
@@ -24,7 +23,7 @@
                     type="password"
                     name="senha"
                     id="senha"
-                    placeholder="Senha"
+                    placeholder="Digite novamente"
                 >
             </div>
 
@@ -102,6 +101,7 @@ form input {
 
 .links {
   margin-top: 10px;
+
 }
 
 input[type="number"]::-webkit-inner-spin-button,

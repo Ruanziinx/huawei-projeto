@@ -1,4 +1,11 @@
 <script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function navigateToCreatePassword() {
+  return router.push('/signup-password')
+}
 </script>
 
 <template>
@@ -10,32 +17,51 @@
         <form action="">
             <div class="mb-3">
                 <div>
-                    <h2>Entrar no Huawei</h2>
+                    <h2>Criar cadastro</h2>
                 </div>
                 <input 
-                    type="email" 
-                    id="exampleFormControlInput1" 
-                    placeholder="Número de matrícula"
-                >
-            </div>
-    
-            <div class="mb-3">
-                <input
-                    type="password"
-                    name="senha"
-                    id="senha"
-                    placeholder="Senha"
+                    type="text"
+                    placeholder="Nome completo"
                 >
             </div>
 
             <div class="mb-3">
-                <a
-                    class="links"        
-                    href="redefinir_senha.html">Esqueci minha senha</a><br>
-                <a href="cadastro.html">Não tenho cadastro</a>
+                <input 
+                    type="text" 
+                    placeholder="Número de matrícula"
+                >
+            </div>
+
+            <div class="mb-3">
+                <input 
+                    type="text" 
+                    placeholder="Número de celular"
+                >
+            </div>
+
+            <div class="mb-3">
+                <input 
+                    type="email" 
+                    placeholder="Email institucional"
+                >
+            </div>
+
+            <div class="mb-3">
+                <input 
+                    type="text" 
+                    placeholder="Curso"
+                >
+            </div>
+
+            <div class="mb-3">
+                <input 
+                    type="text" 
+                    placeholder="Período"
+                >
             </div>
     
-            <button type="button" class="go">
+            <button @click.prevent="navigateToCreatePassword" 
+                type="button" class="go">
                 Avançar
             </button>
         </form>
@@ -45,7 +71,7 @@
 <style scoped>
 .titulosite {
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 h2 {
@@ -57,13 +83,12 @@ h2 {
 
 .loginbox { 
   width: 380px;
-  height: 520px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 12px;
   border: 4px solid #F1F1F1;
   border-radius: 50px;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
   background-color: #F1F1F1;
   box-shadow: 0 4px 8px gray;
 }
@@ -102,6 +127,7 @@ form input {
 
 .links {
   margin-top: 10px;
+
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -115,7 +141,7 @@ a {
     color: black;
     font-size: medium;
     display: block;
-    text-align: left; /* Adicionei text-align ao seletor a */
+    text-align: left;
     margin-left: 60px;
 }
 </style>
